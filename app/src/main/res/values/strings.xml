@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">EulerityHackathon</string>
+
+    <!--Edit Fragment-->
+    <string name="edit_upload_text">UPLOAD</string>
+    <string name="edit_add_text">ADD TEXT</string>
+    <string name="spinner_prompt">EFFECT</string>
+    <string name="dialog_text_prompt">Please enter your text here</string>
+    <string name="dialog_text_positive">Submit</string>
+    <string name="dialog_text_negative">Cancel</string>
+    <string name="upload_complete">Upload complete</string>
+
+    <string-array name="effects">
+        <item>No effect</item>
+        <item>CropTop</item>
+        <item>CropCenter</item>
+        <item>CropBottom</item>
+        <item>CropSquare</item>
+        <item>CropCircle</item>
+        <item>Grayscale</item>
+        <item>RoundedCorners</item>
+        <item>Blur</item>
+        <item>Toon</item>
+        <item>Sepia</item>
+        <item>Invert</item>
+        <item>Pixel</item>
+        <item>Sketch</item>
+        <item>Swirl</item>
+        <item>Brightness</item>
+        <item>Kuawahara</item>
+        <item>Vignette</item>
+    </string-array>
+
+    <!--List Fragment-->
+    <string name="network_error">Unable to load images</string>
+    <string name="storage_permission_request">Please Storage permission to save the images</string>
+
+</resources>
