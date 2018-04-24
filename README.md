@@ -7,38 +7,21 @@ will contain a kotlin rewrite with improvements made that were not achievable in
 
 <img src="https://i.imgur.com/wjX362X.png" width="250" height="450"> <img src="https://i.imgur.com/JNKADgO.png" width="250" height="450">
 
-## Package Structure
-
-
-<img align="left"  src="https://i.imgur.com/3A9V3JK.png" width="250" height="350">
-
-* data:
-    * model: contains POJOs for data objects
-    * remote: contains Retrofit service
-    * repo
-* di: contains all dependency injection files 
-* ui: contains each screen packaged by feature
-    * base: contains base interfaces for views and presenters
-    * edit
-    * list
-* util: contains any files that don't explicitly fall into any other package
-
-<br><br>
-<br><br>
 ## Presentation Pattern
 <img src="https://i0.wp.com/www.tinmegali.com/wp-content/uploads/2016/02/MVP.png?resize=800%2C220&ssl=1">
 
-This project follows the Model-View-Presenter (MVP) presentation pattern.
+This project follows the Model-View-Presenter (MVP) presentation pattern. This breaks down to:
 
-- Model: A data managment level
+- Model: A data management layer that handles any business logic
 
-- Presenter: A mediator between the model and the view, it contains all the presnetation logic 
+- View: Responsible for displaying data from the Presenter and notifying the Presenter of any user input
 
-- View: Responsible for taking data from the presenter and presenting it
+- Presenter: A mediator layer between the model and the view that connects the two, it contains all the presentation logic,
+ like updating the model and reacting to input from the view 
 
 
-Each screen has a `Contract` that outlines the 
-relationship between the `View` and `Presenter`
+Each screen has a `Contract` that outlines interfaces for the relationship between the `View` and `Presenter`, each corresponding 
+`View` or `Presenter` implements their interface and uses it to communicate between each other. 
 
 
 ## Libraries 
